@@ -186,3 +186,27 @@ finally{
 }
 
 console.log ("after finally");
+
+
+
+ 
+onerror=errorHandle; 
+function errorHandle(msg,url,l,col,error){ 
+  console.log(msg);
+    console.log(l);
+
+  return false;
+
+}
+
+var myresult=parseInt(prompt("enter value between 10 && 20 ","15"));
+
+if(myresult<10)
+  throw"less than expect" ;
+  else if (myresult>20)
+    throw new RangeError("out of range");
+ else 
+  alert("value within accepted range"); 
+
+
+console.log ("done");
