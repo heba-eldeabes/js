@@ -213,54 +213,80 @@
   
    
 
-let a= "Elzero web school" ; 
+// let a= "Elzero web school" ; 
 
- console.log (a.slice(2,6).charAt(0).toUpperCase() );
+//  console.log (a.slice(2,6).charAt(0).toUpperCase() );
 
- console.log (a.slice(-4,-3).toUpperCase().repeat(8))  
+//  console.log (a.slice(-4,-3).toUpperCase().repeat(8))  
  
 
- console.log (a.substring(0,6).split());
+//  console.log (a.substring(0,6).split());
 
-console.log (a.substr(0,6)+" "+a.substr(11,6)) 
-
-
-console.log(a.length); 
+// console.log (a.substr(0,6)+" "+a.substr(11,6)) 
 
 
-   console.log(a.charAt(0).toLowerCase()+ a.slice(1 ,a.length -1 ) .toUpperCase()+ a.substring(a.length -1).toLowerCase());
+// console.log(a.length); 
+
+
+//    console.log(a.charAt(0).toLowerCase()+ a.slice(1 ,a.length -1 ) .toUpperCase()+ a.substring(a.length -1).toLowerCase());
 
 
 
  
- if ( typeof"Elzero web school"=== typeof "34"){
-   console.log("Good");
+//  if ( typeof"Elzero web school"=== typeof "34"){
+//    console.log("Good");
 
- } 
+//  } 
 
- if (a.charAt((a.indexOf("w"))).toUpperCase()==="W"){
+//  if (a.charAt((a.indexOf("w"))).toUpperCase()==="W"){
 
-   console.log("Good");
- }
+//    console.log("Good");
+//  }
 
-if(`${a}`!=="string"){
- console.log("Good"); 
+// if(`${a}`!=="string"){
+//  console.log("Good"); 
+
+// } 
+
+
+// if ( typeof"Elzero web school"=== typeof"number"){
+//    console.log("Good");
+
+//  } 
+
+ 
+//  if ( a.slice(0,6).repeat(2)=== "ElzeroElzero"){
+//    console.log("Good");
+
+//  } 
+
+
+
+
+let myfriends=["ahmed","nor", "eslam","fathy","mohamed"];
+ 
+console.log(myfriends[0]);
+console.log(myfriends[1]);
+console.log(myfriends[2]);
+console.log(myfriends[3]);
+console.log(myfriends[4]);
+
+for(let i = 0; i< myfriends.length; i++ ){
+console.log(myfriends[i]);
+
+}  
+
+
+let myfriends1=[1,2,3,4,"ahmed","nor", 6,"eslam",9,"fathy","mohamed"];
+
+let myname=[];
+for(let i = 0; i< myfriends1.length; i++ ){
+
+if(typeof myfriends1[i]==="string"){ 
+  myname.push(myfriends1[i]);
 
 } 
 
+}  
+ console.log(myname);
 
-if ( typeof"Elzero web school"=== typeof"number"){
-   console.log("Good");
-
- } 
-
- 
- if ( a.slice(0,6).repeat(2)=== "ElzeroElzero"){
-   console.log("Good");
-
- } 
-
-
-
-
-let myfriends
