@@ -149,7 +149,9 @@ for(i in associativeArray) {
  
 // throw myerror;  
 
+// js Error handling by using try and catch and finally
 
+ try{
 var myresult=parseInt(prompt("enter value between 10 && 20 ","15"));
 
 if(myresult<10)
@@ -157,4 +159,30 @@ if(myresult<10)
   else if (myresult>20)
     throw new RangeError("out of range");
  else 
-  alert("value within accepted range");
+  alert("value within accepted range"); 
+
+ console.log(" inside try");
+ }
+ catch(e){ 
+
+  if(e instanceof RangeError){
+ console.log("this is range error");
+ console.log(e.name);
+  console.log(e.message);
+
+  }
+  else if(e=="less than expect"){
+  console.log("low")
+
+  }
+
+  // type Error
+  // console.logg("catch Error occured");
+    console.log("catch block");
+
+ }
+finally{
+ console.log("done");
+}
+
+console.log ("after finally");
