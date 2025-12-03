@@ -579,34 +579,53 @@
 //  };
 //use break to  stop loop ;
 //using continue in the loop to do the condition  and continue not stop;
-let products=["keyboard","mouse","pen","pad","monitor"];
+// let products=["keyboard","mouse","pen","pad","monitor"];
 
- let colors=["red","grean",6,"black",5];
+//  let colors=["red","grean",6,"black",5];
 
- let models=[2025,2026];
+//  let models=[2025,2026];
 
 
- for (let i=0 ; i < products.length;i++){
+//  for (let i=0 ; i < products.length;i++){
 
-  if(products[i]==="pen"){
-    continue;
+//   if(products[i]==="pen"){
+//     continue;
 
-  }
+//   }
 
-console.log(`#${products[i]}`);
+// console.log(`#${products[i]}`);
 
-console.log("colors:"); 
+// console.log("colors:"); 
 
- for (let j=0 ; j < colors.length;j++){ 
+//  for (let j=0 ; j < colors.length;j++){ 
 
-  if(typeof(colors[j])==="number"){
-    break;
+//   if(typeof(colors[j])==="number"){
+//     break;
 
-  }
+//   }
 
-console.log(`-${colors[j]}`); 
+// console.log(`-${colors[j]}`); 
 
- }
+//  }
  
+  
+//  };   
 
- }; 
+ //advansed loop 
+
+
+
+let product=["keyboard","mouse","pen","pad","monitor","iphone"]; 
+
+   let i=0 ;
+
+for ( ; ;){ 
+  console.log(product[i]);
+  i+=2;
+  
+ if (i===product.length) {
+  break;
+ }
+
+
+};
