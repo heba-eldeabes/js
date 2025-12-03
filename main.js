@@ -615,17 +615,40 @@
 
 
 
+// let product=["keyboard","mouse","pen","pad","monitor","iphone"]; 
+
+//    let i=0 ;
+
+// for ( ; ;){ 
+//   console.log(product[i]);
+//   i+=2;
+  
+//  if (i===product.length) {
+//   break;
+//  }
+
+
+// };
+
+
 let product=["keyboard","mouse","pen","pad","monitor","iphone"]; 
 
-   let i=0 ;
+let colors=["red","grean","black"];   
+let showcount=4;
 
-for ( ; ;){ 
-  console.log(product[i]);
-  i+=2;
+ document.write(`<h1>show ${showcount} product</h1>`);
+ for (let i=0 ; i < showcount;i++){ 
+ 
+ 
+    document.write(`<div>`);  
+    document.write(`<h3>[${i+1}]${product[i]}</h3>`)
+ 
+     for (let j=0 ; j < colors.length;j++){ 
+
+     document.write(`<h4>${colors[j]}</h4>`);
   
- if (i===product.length) {
-  break;
+     } 
+
+       document.write(`<h4>${colors.join("/")}</h4>`);
+     document.write(`</div>`) ;
  }
-
-
-};
