@@ -631,24 +631,35 @@
 // };
 
 
-let product=["keyboard","mouse","pen","pad","monitor","iphone"]; 
+// let product=["keyboard","mouse","pen","pad","monitor","iphone"]; 
 
-let colors=["red","grean","black"];   
-let showcount=4;
+// let colors=["red","grean","black"];   
+// let showcount=4;
 
- document.write(`<h1>show ${showcount} product</h1>`);
- for (let i=0 ; i < showcount;i++){ 
+//  document.write(`<h1>show ${showcount} product</h1>`);
+//  for (let i=0 ; i < showcount;i++){ 
  
  
-    document.write(`<div>`);  
-    document.write(`<h3>[${i+1}]${product[i]}</h3>`)
+//     document.write(`<div>`);  
+//     document.write(`<h3>[${i+1}]${product[i]}</h3>`)
  
-     for (let j=0 ; j < colors.length;j++){ 
+//      for (let j=0 ; j < colors.length;j++){ 
 
-     document.write(`<h4>${colors[j]}</h4>`);
+//      document.write(`<h4>${colors[j]}</h4>`);
   
-     } 
+//      } 
 
-       document.write(`<h4>${colors.join("/")}</h4>`);
-     document.write(`</div>`) ;
- }
+//        document.write(`<h4>${colors.join("/")}</h4>`);
+//      document.write(`</div>`) ;
+//  } 
+
+//using while loop; 
+
+// let product=["keyboard","mouse","pen","pad","monitor","iphone"]; 
+
+//    let i=0 ;
+
+// while (i< product.length){ 
+//   console.log(product[i]);
+//   i++;} 
+
