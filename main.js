@@ -663,56 +663,72 @@
 //   console.log(product[i]);
 //   i++;} 
 
-function sayhallo(username,age){
-  if (age<20){ 
+// function sayhallo(username,age){
+//   if (age<20){ 
 
-   console.log("this app not good for you " );
+//    console.log("this app not good for you " );
 
-  } 
-  else{
-    console.log(`hallo ${username} your age is ${age}`);
-  }
+//   } 
+//   else{
+//     console.log(`hallo ${username} your age is ${age}`);
+//   }
 
-} 
-sayhallo( "heba",23 ); 
-sayhallo( "nor",19 );
+// } 
+// sayhallo( "heba",23 ); 
+// sayhallo( "nor",19 );
 
 
 
-function generationtime(start,end ,excut){
+// function generationtime(start,end ,excut){
 
-    for(let i=start;i<=end ;i++){ 
-         if(i===excut){
-            continue;
-         }
+//     for(let i=start;i<=end ;i++){ 
+//          if(i===excut){
+//             continue;
+//          }
    
-        console.log (i);
+//         console.log (i);
 
-    }
+//     }
 
-}  
-generationtime(1999,2024,2000);
-
-
+// }  
+// generationtime(1999,2024,2000);
 
 
 
 
 
 
-function generate(start,end ){
+
+
+// function generate(start,end ){
    
 
-    for(let i=start;i<=end ;i++){ 
+//     for(let i=start;i<=end ;i++){ 
 
-          console.log (i);
-         if(i===15){
-            return`interruptting`;
-         }
+//           console.log (i);
+//          if(i===15){
+//             return`interruptting`;
+//          }
    
      
 
-    }
+//     }
 
-}  
-generate(10,20);
+// }  
+// generate(10,20);
+
+
+
+
+function say(username,age=null){
+  
+    // if(age===undefined){
+    //     age ="unknow";
+    // }
+//    age=age || unknow;
+ return `hallo ${username} your age is ${age}`;
+} 
+
+ console.log(say( "heba" ,34));
+
+
