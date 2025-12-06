@@ -692,3 +692,27 @@ function generationtime(start,end ,excut){
 
 }  
 generationtime(1999,2024,2000);
+
+
+
+
+
+
+
+
+function generate(start,end ){
+   
+
+    for(let i=start;i<=end ;i++){ 
+
+          console.log (i);
+         if(i===15){
+            return`interruptting`;
+         }
+   
+     
+
+    }
+
+}  
+generate(10,20);
