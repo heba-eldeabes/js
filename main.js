@@ -663,3 +663,32 @@
 //   console.log(product[i]);
 //   i++;} 
 
+function sayhallo(username,age){
+  if (age<20){ 
+
+   console.log("this app not good for you " );
+
+  } 
+  else{
+    console.log(`hallo ${username} your age is ${age}`);
+  }
+
+} 
+sayhallo( "heba",23 ); 
+sayhallo( "nor",19 );
+
+
+
+function generationtime(start,end ,excut){
+
+    for(let i=start;i<=end ;i++){ 
+         if(i===excut){
+            continue;
+         }
+   
+        console.log (i);
+
+    }
+
+}  
+generationtime(1999,2024,2000);
