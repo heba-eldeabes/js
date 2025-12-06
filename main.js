@@ -720,15 +720,60 @@
 
 
 
-function say(username,age=null){
+// function say(username,age=null){
   
     // if(age===undefined){
     //     age ="unknow";
     // }
 //    age=age || unknow;
- return `hallo ${username} your age is ${age}`;
+//  return `hallo ${username} your age is ${age}`;
+// } 
+
+//  console.log(say( "heba" ,34));
+
+
+//using rest parameter ... + اسم المتغير     
+
+function calc(...numbers) {
+ 
+// console.log (Array.isArray(numbers));
+
+let result =0; 
+for(let i=0 ;i<numbers.length;i++){ 
+
+    result+=numbers[i]; 
+
+} 
+return result;
+
+}  
+console.log(calc(10,30,60,74,90));  
+
+
+
+function showinfo (us=un ,ag=un,rt=0,show="yes" , ...sk){
+
+document.write(`<div>`) ;
+document.write(`<h3>${us}</h3>`);
+document.write(`<p> age:${ag}</p>`);
+document.write(`<p> hour rate:$${rt}</p>`);
+ 
+if(show=="yes"){
+   if(sk.length>0){
+document.write(`<p> skill:${sk.join("/")}</p>`) ;
+} else{
+ document.write(`<p> skills:no skills</p>`) ;
+
+
+}
+}else{
+
+    document.write(`<p>skill is hidden</p>`) 
+
+}
+document.write(`</div>`)
+
 } 
 
- console.log(say( "heba" ,34));
 
-
+showinfo("heba",23,20 ,"yes","html","css" );
