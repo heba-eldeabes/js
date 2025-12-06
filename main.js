@@ -734,46 +734,68 @@
 
 //using rest parameter ... + اسم المتغير     
 
-function calc(...numbers) {
+// function calc(...numbers) {
  
 // console.log (Array.isArray(numbers));
 
-let result =0; 
-for(let i=0 ;i<numbers.length;i++){ 
+// let result =0; 
+// for(let i=0 ;i<numbers.length;i++){ 
 
-    result+=numbers[i]; 
+//     result+=numbers[i]; 
 
-} 
-return result;
+// } 
+// return result;
 
-}  
-console.log(calc(10,30,60,74,90));  
+// }  
+// console.log(calc(10,30,60,74,90));  
 
 
 
-function showinfo (us=un ,ag=un,rt=0,show="yes" , ...sk){
+// function showinfo (us=un ,ag=un,rt=0,show="yes" , ...sk){
 
-document.write(`<div>`) ;
-document.write(`<h3>${us}</h3>`);
-document.write(`<p> age:${ag}</p>`);
-document.write(`<p> hour rate:$${rt}</p>`);
+// document.write(`<div>`) ;
+// document.write(`<h3>${us}</h3>`);
+// document.write(`<p> age:${ag}</p>`);
+// document.write(`<p> hour rate:$${rt}</p>`);
  
-if(show=="yes"){
-   if(sk.length>0){
-document.write(`<p> skill:${sk.join("/")}</p>`) ;
-} else{
- document.write(`<p> skills:no skills</p>`) ;
+// if(show=="yes"){
+//    if(sk.length>0){
+// document.write(`<p> skill:${sk.join("/")}</p>`) ;
+// } else{
+//  document.write(`<p> skills:no skills</p>`) ;
 
 
-}
-}else{
+// }
+// }else{
 
-    document.write(`<p>skill is hidden</p>`) 
+//     document.write(`<p>skill is hidden</p>`) 
 
-}
-document.write(`</div>`)
+// }
+// document.write(`</div>`)
 
-} 
+// } 
 
 
-showinfo("heba",23,20 ,"yes","html","css" );
+// showinfo("heba",23,20 ,"yes","html","css" ); 
+
+
+
+//  function showdetails(a, b, c) {
+//     let Name, age, Status;
+
+//     let arr = [a, b, c];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         typeof arr[i] === "string"
+//             ? Name = arr[i]
+//             : typeof arr[i] === "number"
+//             ? age = arr[i]
+//             : Status = arr[i];
+//     }
+
+//     return `Name: ${Name}, Your Age is: ${age}, Status: ${Status}`;
+// }
+
+// console.log(showdetails("osama", 38, true));
+// console.log(showdetails(38, "osama", true));
+// console.log(showdetails(true, 38, "osama"));
