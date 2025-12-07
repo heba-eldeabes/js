@@ -973,21 +973,39 @@
 
 
 
-let max= "A13BS2ZX";
+// let max= "A13BS2ZX";
 
 
 
-let num =max.split("").filter(function(ele){ 
+// let num =max.split("").filter(function(ele){ 
 
-    return  parseInt(ele) ;
+//     return  parseInt(ele) ;
 
-}) .map(function(ele){
+// }) .map(function(ele){
 
-    return ele *ele ;
-
-
-})  
+//     return ele *ele ;
 
 
-console.log(num);
+// })  
 
+
+// console.log(num);
+
+ 
+
+// let arr=[1,3,4,5,6,7] ; 
+
+
+// let Number=arr.reduce(function(acc,cur,index,arr){
+
+//   return acc+cur;
+
+// },5) 
+// console.log(Number);
+
+  //arrow function
+// let arr=[1,3,4,5,6,7] ; 
+
+
+// let Number=arr.reduce((acc,cur) =>acc+cur,5) 
+// console.log(Number);
