@@ -1009,3 +1009,23 @@
 
 // let Number=arr.reduce((acc,cur) =>acc+cur,5) 
 // console.log(Number);
+
+
+// let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
+   
+// let add=myString.split(",").map(function(ele){
+//     return  isNaN(parseInt(ele))?ele:"";
+
+// }).filter(function(ele){
+//   return !ele.startsWith("_");
+
+
+
+// }).reduce(function(acc,cur){
+
+//       return `${acc}${cur}`;
+// }).slice(!false,-true);
+// console.log (add); 
+
+
+
