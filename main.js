@@ -799,3 +799,195 @@
 // console.log(showdetails("osama", 38, true));
 // console.log(showdetails(38, "osama", true));
 // console.log(showdetails(true, 38, "osama"));
+
+
+// function saymessage(fname,lname){ 
+//     let massage='hallo';  
+//     function concatmessage(){
+//         massage=`${massage} ${fname} ${lname}`
+//     }
+//     concatmessage();
+//     return massage;
+
+// } 
+// console.log(saymessage("heba","eldeabas"));
+
+
+
+// function saymessage(fname,lname){ 
+//     let massage='hallo';  
+//     function concatmessage(){
+//       return`${massage} ${fname} ${lname}`
+//     }
+//     return concatmessage();
+  
+
+// } 
+// console.log(saymessage("heba","eldeabas"));
+
+
+
+
+// function saymessage(fname,lname){ 
+//     let massage='hallo';  
+//     function concatmessage(){
+//         massage=`${massage} ${fname} ${lname}`
+//     }
+//     concatmessage();
+//     return massage;
+
+// } 
+// console.log(saymessage("heba","eldeabas")); 
+
+
+
+// using arrow function  
+
+
+
+// function print(){
+
+//   return 10;
+
+// } 
+// console.log(print()); 
+
+//  let print =function (){
+
+//   return 10;
+
+// } 
+// console.log(print()); 
+
+
+//in case one line remove {}and function and the name of function 
+//    let print=()=>
+
+//  10;
+   
+
+// console.log(print()); 
+ 
+
+// scope local and globle  
+
+  
+
+
+//  
+
+
+
+//block scope  
+
+// var a=20; 
+
+// if (20===20){
+//  let a=40;
+//  console.log(`from block ${a}`);
+// }
+
+// console.log(`from globel ${a}`); 
+
+
+
+// let names=(...p)=> `[ ${p.join("],[")}] =>Done!`; 
+
+    
+
+
+// console.log(names("osama","mohamed","ali","nor"));  
+
+
+// let numbers =[20,50,10,60]; 
+// let calc=(one,two ,...nums)=> one +two+ nums.reduce((one,two)=> one +two +0) ;
+
+// console.log(calc(10,numbers[0],numbers[1])); 
+
+
+// let numbers =[20,50,10,60]; 
+// let calc=(one,two ,...nums)=>{ 
+//     let sum =0; 
+
+//     for(let i=0 ;i<nums.length;i++) {
+//        sum+=nums[i];
+
+//     }; 
+//     return one +two +sum;
+// }
+// console.log(calc(10,numbers[0],numbers[1]));  
+
+
+
+//using map  
+
+
+// let mynums=[3,6,9,5,7,4];
+
+// let newarry=[]; 
+
+
+// for(let i=0 ;i<mynums.length ;i++){
+
+//  newarry.push (mynums[i]+mynums[i]);
+
+// } 
+// console.log(newarry);
+
+
+// let add=mynums.map(function(el ,indexedDB,arry){
+
+//   return el+el;
+
+// }) 
+// console.log(add);
+
+
+// let add=mynums.map((el)=>
+//      el+el
+// );
+
+// console.log(add);
+ 
+
+//   function no(el){
+    
+//    return el +el;
+//   }
+ 
+//    let add=mynums.map(no); 
+
+//    console.log(add);
+  
+
+
+//using filter 
+
+// let friends=["ahmed","nor","fathy"];
+
+// let fil=friends.filter(function(el){
+//   return el.startsWith("a");
+
+// }) 
+// console.log(fil);  
+
+
+
+let max= "A13BS2ZX";
+
+
+
+let num =max.split("").filter(function(ele){ 
+
+    return  parseInt(ele) ;
+
+}) .map(function(ele){
+
+    return ele *ele ;
+
+
+})  
+
+
+console.log(num);
+
