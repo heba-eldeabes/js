@@ -1048,34 +1048,68 @@
 
 
 
-  let student ={ 
-    Name:"Ahmed",
-    id:1213,
-    skill:["Html","css","js"],
-    free:true ,
-    address:{
-      USA:"london",
-      Egypt:{
-        one :"cairo", 
-        two:"Tanta" ,
-      },
+//   let student ={ 
+//     Name:"Ahmed",
+//     id:1213,
+//     skill:["Html","css","js"],
+//     free:true ,
+//     address:{
+//       USA:"london",
+//       Egypt:{
+//         one :"cairo", 
+//         two:"Tanta" ,
+//       },
      
-    } ,
+//     } ,
 
-    chackfree: function (){
-    if (student.free===true){
-      return "free" ;
-    }else{
-      return "notfree";
-    }
+//     chackfree:function (){
+//     if (student.free===true){
+//       return "free" ;
+//     }else{
+//       return "notfree";
+//     }
       
-    },
+//     },
    
 
-  }; 
+//   }; 
 
-console.log (student.Name);
-console.log (student.address.Egypt.two);
-console.log (student["address"]["USA"]);
-  console.log (student.chackfree());
-  console.log (student["id"]);
+// console.log (student.Name);
+// console.log (student.address.Egypt.two);
+// console.log (student["address"]["USA"]);
+//   console.log (student.chackfree());
+//   console.log (student["id"]); 
+
+//creat new by two way object; 
+//first one
+// let info ={
+//  age:30,
+// } ;
+
+// info.age =24,
+// info.catch=function(){
+//    return "halo"
+// },
+
+
+// console.log (info.age); 
+// console.log (info.catch()); 
+
+// //anther way 
+
+let info =new Object({
+age:42,
+})
+
+;
+
+
+
+info.age =24,
+info.catch=function(){
+   return "halo"
+},
+
+
+console.log (info.age); 
+console.log (info.catch()); 
