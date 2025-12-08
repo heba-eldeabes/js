@@ -1097,19 +1097,67 @@
 
 // //anther way 
 
-let info =new Object({
-age:42,
-})
+// let info =new Object({
+// age:42,
+// })
 
-;
-
-
-
-info.age =24,
-info.catch=function(){
-   return "halo"
-},
+// ;
 
 
-console.log (info.age); 
-console.log (info.catch()); 
+
+// info.age =24,
+// info.catch=function(){
+//    return "halo"
+// },
+
+
+// console.log (info.age); 
+// console.log (info.catch()); 
+
+
+
+
+//  let student ={ 
+//     age:"23",
+   
+//     catch:function(){
+//    return  student.age *2  }
+//   };     
+//    console.log(student.age);
+//  console.log(student.catch());
+
+    
+
+//  let obj=Object.create(student) 
+
+//   obj.age=40,
+
+   
+
+//   console.log(obj.age);
+//  console.log(obj.catch());
+ 
+
+
+
+// let student ={ 
+//     age:"23",
+   
+//     catch:function(){
+//    return  this.age *2  }
+//   };     
+//    console.log(student.age);
+//  console.log(student.catch());
+
+    
+
+//  let obj=Object.create(student) 
+
+//   obj.age=40,
+
+   
+
+//   console.log(obj.age);
+//  console.log(obj.catch());
+ 
+
