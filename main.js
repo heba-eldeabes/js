@@ -1160,4 +1160,58 @@
 //   console.log(obj.age);
 //  console.log(obj.catch());
  
+ 
+//DOM  
 
+ 
+//  let myElement=document.querySelector(".JS");
+//  console.log(myElement.innerHTML); 
+//   console.log(myElement.textContent); 
+//   //  myElement.innerHTML="from js"
+
+//   document.images[0].src="http://googl.com" ; 
+//     document.images[0].alt="alter" ; 
+//       document.images[0].className="al" ;
+
+//        let link=document.querySelector(".link"); 
+//           console.log(link.getAttribute ("href")); 
+//            console.log(link.getAttribute ("class")); 
+
+//        link.getAttribute ("href");
+//         link.getAttribute ("class");
+
+//  link.setAttribute ("href","http://TWITTER.com");  
+//   link.setAttribute("titel","twitter");
+    
+
+//  console.log(document.getElementsByTagName("p")[0].attributes);
+//  let mysource=document.getElementsByTagName("p")[0];
+
+  
+//  if (mysource.hasAttribute("data-src")){  
+//   if(mysource.getAttribute("data-src")===""){
+//     mysource.removeAttribute("data-src")
+
+//   }else{
+//     mysource.setAttribute("data-src","hallo");
+//   }
+
+//  }else{
+//    console.log(" not found")
+
+
+//  } 
+
+let comment=document.createComment("how to creat the element  and attribute " );
+let myElement =document.createElement("div"); 
+ let myarr =document.createAttribute("titel");  
+let  text=document.createTextNode("hallo javascript best language");
+
+myElement.appendChild(comment);
+myElement.className="product"; 
+myElement.setAttribute("data","html"); 
+myElement.setAttributeNode(myarr); 
+myElement.appendChild(text); 
+
+
+document.body.appendChild(myElement); 
