@@ -1028,4 +1028,54 @@
 // console.log (add); 
 
 
+   // creat object
+ 
 
+  //  let user ={ 
+
+  //   thename :"heba",
+  //   theage :23,
+
+  // sayhallo:function(){
+  //    return "hallo";
+  // }
+
+  //  }; 
+
+
+  //  console.log(user.sayhallo());  
+
+
+
+
+  let student ={ 
+    Name:"Ahmed",
+    id:1213,
+    skill:["Html","css","js"],
+    free:true ,
+    address:{
+      USA:"london",
+      Egypt:{
+        one :"cairo", 
+        two:"Tanta" ,
+      },
+     
+    } ,
+
+    chackfree: function (){
+    if (student.free===true){
+      return "free" ;
+    }else{
+      return "notfree";
+    }
+      
+    },
+   
+
+  }; 
+
+console.log (student.Name);
+console.log (student.address.Egypt.two);
+console.log (student["address"]["USA"]);
+  console.log (student.chackfree());
+  console.log (student["id"]);
