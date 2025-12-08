@@ -1202,16 +1202,31 @@
 
 //  } 
 
-let comment=document.createComment("how to creat the element  and attribute " );
-let myElement =document.createElement("div"); 
- let myarr =document.createAttribute("titel");  
-let  text=document.createTextNode("hallo javascript best language");
+// let comment=document.createComment("how to creat the element  and attribute " );
+// let myElement =document.createElement("div"); 
+//  let myarr =document.createAttribute("titel");  
+// let  text=document.createTextNode("hallo javascript best language");
 
-myElement.appendChild(comment);
-myElement.className="product"; 
-myElement.setAttribute("data","html"); 
-myElement.setAttributeNode(myarr); 
-myElement.appendChild(text); 
+// myElement.appendChild(comment);
+// myElement.className="product"; 
+// myElement.setAttribute("data","html"); 
+// myElement.setAttributeNode(myarr); 
+// myElement.appendChild(text); 
 
 
-document.body.appendChild(myElement); 
+// document.body.appendChild(myElement); 
+
+for(let i=0 ;i<=100;i++){
+let element=document.createElement("div");  
+
+let element1=document.createElement("h3");  
+let element2=document.createElement("p");  
+ element.className="product";
+let atr=document.createTextNode("product 1");
+let atr2=document.createTextNode("product 2");  
+element.appendChild(element1); 
+element1.appendChild(atr);
+element.appendChild(element2); 
+element2.appendChild(atr2);
+document.body.appendChild(element);  
+};
