@@ -1216,7 +1216,7 @@
 
 // document.body.appendChild(myElement); 
 
-for(let i=0 ;i<=100;i++){
+// for(let i=0 ;i<=100;i++){
 let element=document.createElement("div");  
 
 let element1=document.createElement("h3");  
@@ -1229,4 +1229,11 @@ element1.appendChild(atr);
 element.appendChild(element2); 
 element2.appendChild(atr2);
 document.body.appendChild(element);  
-};
+// }; 
+
+console.log(element.firstChild);
+console.log(element.lastChild); 
+console.log(element.firstElementChild);
+console.log(element.lastElementChild); 
+console.log(element.children); 
+console.log(element.childNodes);
