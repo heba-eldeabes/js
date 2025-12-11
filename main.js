@@ -1217,23 +1217,89 @@
 // document.body.appendChild(myElement); 
 
 // for(let i=0 ;i<=100;i++){
-let element=document.createElement("div");  
+// let element=document.createElement("div");  
 
-let element1=document.createElement("h3");  
-let element2=document.createElement("p");  
- element.className="product";
-let atr=document.createTextNode("product 1");
-let atr2=document.createTextNode("product 2");  
-element.appendChild(element1); 
-element1.appendChild(atr);
-element.appendChild(element2); 
-element2.appendChild(atr2);
-document.body.appendChild(element);  
+// let element1=document.createElement("h3");  
+// let element2=document.createElement("p");  
+//  element.className="product";
+// let atr=document.createTextNode("product 1");
+// let atr2=document.createTextNode("product 2");  
+// element.appendChild(element1); 
+// element1.appendChild(atr);
+// element.appendChild(element2); 
+// element2.appendChild(atr2);
+// document.body.appendChild(element);  
 // }; 
 
-console.log(element.firstChild);
-console.log(element.lastChild); 
-console.log(element.firstElementChild);
-console.log(element.lastElementChild); 
-console.log(element.children); 
-console.log(element.childNodes);
+// console.log(element.firstChild);
+// console.log(element.lastChild); 
+// console.log(element.firstElementChild);
+// console.log(element.lastElementChild); 
+// console.log(element.children); 
+// console.log(element.childNodes); 
+
+
+
+// let userinput=document.querySelector("[name= 'username']");
+// let ageinput=document.querySelector("[name='age']");
+
+// document.forms[0].onsubmit=function(e) { 
+// let uservalid=false;
+// let agevalid=false; 
+ 
+
+// if(userinput.value!=="" &&userinput.value.length<=10){
+
+//   uservalid=true;
+
+// }  
+
+
+// if(age.value!=="" ){ 
+
+//   agevalid=true;
+// }
+
+
+
+
+
+// if(uservalid===false||agevalid===false)
+// e.prevantDefult();
+
+
+// } 
+
+
+// let user=document.querySelector("[name='username']");
+// let age=document.querySelector("[name='age']");
+
+
+// document.forms[0].onsubmit=function(e){
+ 
+//   let uservalid=false;
+//   let agevalid=false;  
+
+//   if(user.value!==""&&user.value.length<=10) {
+
+
+//     uservalid=true;
+
+//   }
+ 
+//   if(age.value!=="") {
+
+ 
+//     agevalid=true;
+
+//   }
+ 
+
+// } 
+
+
+// if(uservalid===false||agevalid===false){
+
+// e.prevantDefult();
+
+// }
