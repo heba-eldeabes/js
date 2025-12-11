@@ -1305,20 +1305,56 @@
 // }
 
 
-let one=document.querySelector("[name='one']");
-let two=document.querySelector("[name='two']");
+// let one=document.querySelector("[name='one']");
+// let two=document.querySelector("[name='two']");
 
 
 
    
 
 
- one.onblur=function(){
+//  one.onblur=function(){
  
-  two.focus(); 
+//   two.focus(); 
 
 
- }; 
+//  }; 
+ 
+ let element =document.getElementById("h") 
+
+
+//  console.log(element.classList);
+//   console.log(element.classList.contains("one"));
+//     console.log(element.classList.contains("er"));
+//       console.log(element.classList.item("one")); 
+//         console.log(element.classList.length);
+
+        //  element.onclick=function(){
+
+        //   element.classList.add("heba","fathy");
+        //    element.classList.remove("heba","fathy");
+        //    element.classList.toggle("heba","fathy");                                          
+
+
+        //  }; 
+
+element.style.color="red"; 
+element.style.fontWeight="bold";  
+
+element.style.cssText="color:green";"font-weight:bold";"opacity:0.9 ";
+
+element.style.setProperty("font-size","40px"); 
+
+
+element.style.removeProperty("color");  
+
+
+
+
+
+
+
+
 
 
  
