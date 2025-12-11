@@ -1407,12 +1407,8 @@ li4.appendChild(li4text);
        div.style.fontWeight="bold";
     
 document.body.appendChild(header);
-    header.style.display="flex";
-     header.style.padding="10px";
-     header.style.alignItems="center";
-      header.style.justifyContent="space-between";
-      ul.style.display="flex";
-      ul.style.justifyItems="space-between"
+header.style.cssText = 'display: flex; justify-content: space-between; align-items: center; padding: 10px';
+    ul.style.cssText = 'display: flex; justify-items;space-between';
     li1.style.padding="5px";
     li2.style.padding="5px";
     li3.style.padding="5px";
