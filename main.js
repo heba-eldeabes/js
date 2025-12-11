@@ -1338,23 +1338,30 @@
 
         //  }; 
 
-element.style.color="red"; 
-element.style.fontWeight="bold";  
+// element.style.color="red"; 
+// element.style.fontWeight="bold";  
 
-element.style.cssText="color:green";"font-weight:bold";"opacity:0.9 ";
+// element.style.cssText="color:green";"font-weight:bold";"opacity:0.9 ";
 
-element.style.setProperty("font-size","40px"); 
-
-
-element.style.removeProperty("color");  
+// element.style.setProperty("font-size","40px"); 
 
 
+// element.style.removeProperty("color");  
 
 
 
 
+let creatpg=document.createElement("p");  
+let creat=document.createTextNode("hallo from js");   
+creatpg.appendChild(creat);
 
 
+// element.after(creatpg);
 
+
+// element.before(creatpg);
+// element.append(creatpg);
+// element.prepend(creatpg);
+element.remove();
 
  
