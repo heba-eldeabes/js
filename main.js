@@ -1303,3 +1303,22 @@
 // e.prevantDefult();
 
 // }
+
+
+let one=document.querySelector("[name='one']");
+let two=document.querySelector("[name='two']");
+
+
+
+   
+
+
+ one.onblur=function(){
+ 
+  two.focus(); 
+
+
+ }; 
+
+
+ 
