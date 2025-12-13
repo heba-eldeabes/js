@@ -1510,22 +1510,41 @@
 //  }
  
 
- let hallo=setTimeout(hay,2000); 
+//  let hallo=setTimeout(hay,2000); 
 
 
-function hay(){
+// function hay(){
 
 
-console.log("hallo ");
+// console.log("hallo ");
 
-};
+// };
 
-console.log(hallo);
+// console.log(hallo);
   
 
-let btn=document.querySelector("button");
-btn.onclick=function(){
+// let btn=document.querySelector("button");
+// btn.onclick=function(){
 
-clearTimeout(hallo);
+// clearTimeout(hallo);
 
-} ;
+// } ;
+ 
+
+let div=document.querySelector("div");
+function count(){
+
+  div.innerHTML -= 1 
+  if(div.innerHTML==="0"){
+   clearInterval(counter);
+
+
+  }
+ 
+}
+
+ let counter=setInterval(count,1000);
+
+
+
+
