@@ -1531,20 +1531,25 @@
 // } ;
  
 
-let div=document.querySelector("div");
-function count(){
+// let div=document.querySelector("div");
+// function count(){
 
-  div.innerHTML -= 1 
-  if(div.innerHTML==="0"){
-   clearInterval(counter);
+//   div.innerHTML -= 1 
+//   if(div.innerHTML==="0"){
+//    clearInterval(counter);
 
 
-  }
+//   }
  
-}
+// }
 
- let counter=setInterval(count,1000);
+//  let counter=setInterval(count,1000);
+window.scrollTo({
+left :1200,
+top:1230,
+behavior:"smooth"
 
+});
 
 
 
