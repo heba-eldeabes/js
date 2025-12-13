@@ -1544,12 +1544,30 @@
 // }
 
 //  let counter=setInterval(count,1000);
-window.scrollTo({
-left :1200,
-top:1230,
-behavior:"smooth"
+// window.scrollTo({
+// left :1200,
+// top:1230,
+// behavior:"smooth"
 
-});
+// });
 
 
 
+
+let btn=document.querySelector("button"); 
+
+window.onscroll =function(){
+
+if(window.scrollY>=600){
+
+  btn.style.display="block";
+
+ 
+
+}else{
+
+  btn.style.display="none";
+}
+
+
+}
