@@ -1366,104 +1366,166 @@
 
   //creat header
 
- let header=document.createElement("header"); 
- header.className="websit-header"; 
- console.log(header);  
-    let div=document.createElement("div"); 
-    div.className="logo"; 
-     header.appendChild(div); 
+//  let header=document.createElement("header"); 
+//  header.className="websit-header"; 
+//  console.log(header);  
+//     let div=document.createElement("div"); 
+//     div.className="logo"; 
+//      header.appendChild(div); 
 
 
-  let ul=document.createElement("ul"); 
-  ul.className="menu";  
+//   let ul=document.createElement("ul"); 
+//   ul.className="menu";  
 
-tems="space-between";
+// tems="space-between";
 
  
 
-  let li1=document.createElement("li1");
-     let li2=document.createElement("li2");
-  let li3=document.createElement("li3");
-    let li4=document.createElement("li4");
-    header.appendChild(ul);
-    ul.appendChild(li1); 
-     ul.appendChild(li2);
-    ul.appendChild(li3);
-    ul.appendChild(li4);
+//   let li1=document.createElement("li1");
+//      let li2=document.createElement("li2");
+//   let li3=document.createElement("li3");
+//     let li4=document.createElement("li4");
+//     header.appendChild(ul);
+//     ul.appendChild(li1); 
+//      ul.appendChild(li2);
+//     ul.appendChild(li3);
+//     ul.appendChild(li4);
 
-let divtext=document.createTextNode("ELZERO"); 
- div.appendChild(divtext);
+// let divtext=document.createTextNode("ELZERO"); 
+//  div.appendChild(divtext);
 
-let li1text=document.createTextNode("Home");
-li1.appendChild(li1text);
-let li2text=document.createTextNode("about");
-li2.appendChild(li2text);
-let li3text=document.createTextNode("service");
-li3.appendChild(li3text);
-let li4text=document.createTextNode("contact"); 
-li4.appendChild(li4text);
-     div.style.color="green";
-      div.style.fontSize="20px";
-       div.style.fontWeight="bold";
+// let li1text=document.createTextNode("Home");
+// li1.appendChild(li1text);
+// let li2text=document.createTextNode("about");
+// li2.appendChild(li2text);
+// let li3text=document.createTextNode("service");
+// li3.appendChild(li3text);
+// let li4text=document.createTextNode("contact"); 
+// li4.appendChild(li4text);
+//      div.style.color="green";
+//       div.style.fontSize="20px";
+//        div.style.fontWeight="bold";
     
-document.body.appendChild(header);
-header.style.cssText = 'display: flex; justify-content: space-between; align-items: center; padding: 10px';
-    ul.style.cssText = 'display: flex; justify-items;space-between';
-    li1.style.padding="5px";
-    li2.style.padding="5px";
-    li3.style.padding="5px";
-    li4.style.padding="5px";
-   li1.style.color="gray";
-    li2.style.color="gray";
-    li3.style.color="gray";
-    li4.style.color="gray";
+// document.body.appendChild(header);
+// header.style.cssText = 'display: flex; justify-content: space-between; align-items: center; padding: 10px';
+//     ul.style.cssText = 'display: flex; justify-items;space-between';
+//     li1.style.padding="5px";
+//     li2.style.padding="5px";
+//     li3.style.padding="5px";
+//     li4.style.padding="5px";
+//    li1.style.color="gray";
+//     li2.style.color="gray";
+//     li3.style.color="gray";
+//     li4.style.color="gray";
 
      
    
-//creat body
+// //creat body
 
-    let div1 = document.createElement("div");
-div1.className = "content";
+//     let div1 = document.createElement("div");
+// div1.className = "content";
 
-for (let i = 1; i <= 15; i++) {
-  let div2 = document.createElement("div");
-  div2.className = "product";
+// for (let i = 1; i <= 15; i++) {
+//   let div2 = document.createElement("div");
+//   div2.className = "product";
 
-  let div2text = document.createTextNode("product");
-  div2.appendChild(div2text);
+//   let div2text = document.createTextNode("product");
+//   div2.appendChild(div2text);
 
-  let span = document.createElement("span");
-  let spantext=document.createTextNode([i])
-  span.appendChild(spantext);
+//   let span = document.createElement("span");
+//   let spantext=document.createTextNode([i])
+//   span.appendChild(spantext);
 
-  div2.appendChild(span);
-  div1.appendChild(div2);
-   div2.prepend(span)
+//   div2.appendChild(span);
+//   div1.appendChild(div2);
+//    div2.prepend(span)
 
  
-  div2.style.cssText =
-    "background-color: white; display: flex; flex-direction: column; text-align: center; border-radius: 5px; color: gray; font-size: 14px ;padding: 15px";
+//   div2.style.cssText =
+//     "background-color: white; display: flex; flex-direction: column; text-align: center; border-radius: 5px; color: gray; font-size: 14px ;padding: 15px";
 
 
-  span.style.cssText =
-    "font-size: 30px; color: black; margin-bottom: 10px";
-}
+//   span.style.cssText =
+//     "font-size: 30px; color: black; margin-bottom: 10px";
+// }
 
-document.body.appendChild(div1);
+// document.body.appendChild(div1);
 
 
-div1.style.cssText =
-  "display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; background-color: #f1f1f1; padding: 20px";
+// div1.style.cssText =
+//   "display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; background-color: #f1f1f1; padding: 20px";
   
 
- // creat footer
+//  // creat footer
 
 
- let footer=document.createElement("footer"); 
- footer.className = "footer"; 
- console.log(footer); 
- let footertext=document.createTextNode("copyright2025");
- footer.appendChild(footertext);
- document.body.appendChild(footer);
+//  let footer=document.createElement("footer"); 
+//  footer.className = "footer"; 
+//  console.log(footer); 
+//  let footertext=document.createTextNode("copyright2025");
+//  footer.appendChild(footertext);
+//  document.body.appendChild(footer);
  
- footer.style.cssText ="background-color:green ;padding: 20px ; text-align: center;color:white ;font-size:20px"
+//  footer.style.cssText ="background-color:green ;padding: 20px ; text-align: center;color:white ;font-size:20px"  
+
+
+
+
+
+//use setTimeout and clearTimeout
+
+
+
+// setTimeout(function(){ 
+
+//   console.log("hallo my world");
+
+
+
+// },3000); 
+
+// setTimeout(sayhy,3000);  
+
+// function sayhy(){
+//   console.log("hallo my world");
+// };  
+
+
+// let count =setTimeout(sayhy,3000);  
+
+// function sayhy(){
+//   console.log(`hallo my world `);
+  
+// }; 
+
+//  console.log(count);
+
+
+//  let but=document.querySelector("button");  
+ 
+//  but.onclick=function(){
+// clearTimeout(count);
+
+
+//  }
+ 
+
+ let hallo=setTimeout(hay,2000); 
+
+
+function hay(){
+
+
+console.log("hallo ");
+
+};
+
+console.log(hallo);
+  
+
+let btn=document.querySelector("button");
+btn.onclick=function(){
+
+clearTimeout(hallo);
+
+} ;
