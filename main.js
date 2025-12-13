@@ -1554,32 +1554,49 @@
 
 
 
-let btn=document.querySelector("button"); 
+// let btn=document.querySelector("button"); 
 
-window.onscroll =function(){
+// window.onscroll =function(){
 
-if(window.scrollY>=600){
+// if(window.scrollY>=600){
 
-  btn.style.display="block";
+//   btn.style.display="block";
 
  
 
-}else{
+// }else{
 
-  btn.style.display="none";
-}
+//   btn.style.display="none";
+// }
 
 
-}
+// }
 
-btn.onclick=function(){
- window.scrollTo({
+// btn.onclick=function(){
+//  window.scrollTo({
 
-  top:0,
-  right:0, 
-  behavior:"smooth"
+//   top:0,
+//   right:0, 
+//   behavior:"smooth"
   
- });
+//  });
 
 
-};
+// }; 
+
+
+//use set
+window.localStorage.setItem("color","blue"); 
+window.localStorage.fontweight="blod";
+window.localStorage["fontsize"]="20px";  
+//use get
+console.log(window.localStorage.getItem("color")); 
+window.localStorage.fontsize; 
+window.localStorage["fontweight"] ;
+
+console.log(window.localStorage.key(0)); 
+
+document.body.style.backgroundColor=window.localStorage.getItem("color"); 
+
+
+// window.localStorage.clear();
