@@ -1094,7 +1094,11 @@
 
 // console.log (info.age); 
 // console.log (info.catch()); 
-
+const user={
+  address:
+    
+    "cairo"
+}
 // //anther way 
 
 // let info =new Object({
@@ -1586,17 +1590,95 @@
 
 
 //use set
-window.localStorage.setItem("color","blue"); 
-window.localStorage.fontweight="blod";
-window.localStorage["fontsize"]="20px";  
-//use get
-console.log(window.localStorage.getItem("color")); 
-window.localStorage.fontsize; 
-window.localStorage["fontweight"] ;
+// window.localStorage.setItem("color","blue"); 
+// window.localStorage.fontweight="blod";
+// window.localStorage["fontsize"]="20px";  
+// //use get
+// console.log(window.localStorage.getItem("color")); 
+// window.localStorage.fontsize; 
+// window.localStorage["fontweight"] ;
 
-console.log(window.localStorage.key(0)); 
+// console.log(window.localStorage.key(0)); 
 
-document.body.style.backgroundColor=window.localStorage.getItem("color"); 
+// document.body.style.backgroundColor=window.localStorage.getItem("color"); 
 
 
 // window.localStorage.clear();
+
+
+
+
+//  let lis=document.querySelectorAll("ul li"); 
+//  let ex=document.querySelector(".experiment");
+// lis.forEach(function(li){
+
+//   li.addEventListener("click" ,function(e){
+ 
+//     // console.log(e.currentTarget.dataset.color); 
+//     // remove class active
+// lis.forEach(function(e){
+// e.classList.remove("active")
+
+// });
+// // add class active to current Element; 
+// e.currentTarget.classList.add("active"); 
+
+// // window.localStorage.setItem("color",li.currentTarget.dataset.color);
+
+//    ex.style.backgroundColor = li.currentTarget.dataset.color;
+
+//   });
+
+
+
+// });
+  
+
+// let myfriend=["ahmed","mohamed","ali"];
+
+// let[a,b,c,d]=myfriend;
+
+// console.log(a);
+// console.log(b); 
+// console.log(c);
+
+
+// let[a,b, ]=myfriend;
+
+// console.log(a);
+// console.log(b); 
+ 
+
+
+// book="video";
+// video="BOOK"; 
+
+
+
+// let SWAP=book; 
+
+// book=video; 
+
+// video=SWAP;
+
+
+// console.log(book);
+// console.log(video); 
+ 
+
+// [book,video]=[video,book];
+
+
+
+
+const us ={ 
+    Name:"Ahmed",
+    id:1213,
+    skill:["Html","css","js"],
+    
+     
+    } ;
+
+
+const{Name,id,skill}=us;
+console.log(Name);
