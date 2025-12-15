@@ -1683,3 +1683,10 @@ const us ={
 
 const{Name,id,skill:{Html:h,css:co,js}}=us;
 console.log(`${h} ${co}`);
+
+
+
+const{Html:skillone,css:skilltwo}=us.skill; 
+
+
+console.log(`${skillone} ${skilltwo}`);
