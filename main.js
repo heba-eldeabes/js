@@ -1670,7 +1670,7 @@ const user={
 
 
 
-
+//nested object;
 const us ={ 
     Name:"Ahmed",
     id:1213,
@@ -1680,13 +1680,92 @@ const us ={
      
     } ;
 
-
-const{Name,id,skill:{Html:h,css:co,js}}=us;
-console.log(`${h} ${co}`);
+    show(us);
 
 
+function show({Name:n,id:i}){
 
-const{Html:skillone,css:skilltwo}=us.skill; 
+console.log(`${n} ,${i}`);
 
 
-console.log(`${skillone} ${skilltwo}`);
+}
+
+
+
+// const{Name,id,skill:{Html:h,css:co,js}}=us;
+// console.log(`${h} ${co}`);
+
+
+
+// const{Html:skillone,css:skilltwo}=us.skill; 
+
+
+// console.log(`${skillone} ${skilltwo}`);
+
+
+
+
+
+
+let chosen = 3;
+let myFriends = [
+  { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+  { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
+  { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
+]; 
+let [{title:t1 ,age:a1 ,available:av,skills:[one,two]},
+   {title:t2 ,age:a2 ,available:av2,skills:[one2,two2]},
+   {title:t3 ,age:a3 ,available:av3,skills:[one22,two23]}
+
+]=myFriends;
+
+
+if(chosen==1){
+
+  console.log(`${t1} ${a1} ${two}`);
+  if(av===true){
+   console.log("its available") ;
+
+  }else{
+
+    console.log("its not available") ;
+  }
+
+
+};
+
+
+
+
+
+
+
+if(chosen===2){
+
+  console.log(`${t2} ${a2} ${two2}`);
+  if(av2==true){
+   console.log("its available") ;
+
+  }else{
+
+    console.log("its not available") ;
+  }
+
+
+};
+
+if(chosen==3){
+
+  console.log(`${t3} ${a3} ${two23}`);
+  if(av3===true){
+   console.log("its available") ;
+
+  }else{
+
+    console.log("its not available") ;
+  }
+
+
+};
+
+
