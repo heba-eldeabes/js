@@ -1674,11 +1674,12 @@ const user={
 const us ={ 
     Name:"Ahmed",
     id:1213,
-    skill:["Html","css","js"],
+    skill:{Html:70,
+      css:80,}
     
      
     } ;
 
 
-const{Name,id,skill}=us;
-console.log(Name);
+const{Name,id,skill:{Html:h,css:co,js}}=us;
+console.log(`${h} ${co}`);
