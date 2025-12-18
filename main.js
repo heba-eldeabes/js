@@ -1094,11 +1094,11 @@
 
 // console.log (info.age); 
 // console.log (info.catch()); 
-const user={
-  address:
+// const user={
+//   address:
     
-    "cairo"
-}
+//     "cairo"
+// }
 // //anther way 
 
 // let info =new Object({
@@ -1671,24 +1671,24 @@ const user={
 
 
 //nested object;
-const us ={ 
-    Name:"Ahmed",
-    id:1213,
-    skill:{Html:70,
-      css:80,}
+// const us ={ 
+//     Name:"Ahmed",
+//     id:1213,
+//     skill:{Html:70,
+//       css:80,}
     
      
-    } ;
+//     } ;
 
-    show(us);
-
-
-function show({Name:n,id:i}){
-
-console.log(`${n} ,${i}`);
+//     show(us);
 
 
-}
+// function show({Name:n,id:i}){
+
+// console.log(`${n} ,${i}`);
+
+
+// }
 
 
 
@@ -1707,65 +1707,195 @@ console.log(`${n} ,${i}`);
 
 
 
-let chosen = 3;
-let myFriends = [
-  { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
-  { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
-  { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
-]; 
-let [{title:t1 ,age:a1 ,available:av,skills:[one,two]},
-   {title:t2 ,age:a2 ,available:av2,skills:[one2,two2]},
-   {title:t3 ,age:a3 ,available:av3,skills:[one22,two23]}
+// let chosen = 3;
+// let myFriends = [
+//   { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+//   { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
+//   { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
+// ]; 
+// let [{title:t1 ,age:a1 ,available:av,skills:[one,two]},
+//    {title:t2 ,age:a2 ,available:av2,skills:[one2,two2]},
+//    {title:t3 ,age:a3 ,available:av3,skills:[one22,two23]}
 
-]=myFriends;
-
-
-if(chosen==1){
-
-  console.log(`${t1} ${a1} ${two}`);
-  if(av===true){
-   console.log("its available") ;
-
-  }else{
-
-    console.log("its not available") ;
-  }
+// ]=myFriends;
 
 
-};
+// if(chosen==1){
+
+//   console.log(`${t1} ${a1} ${two}`);
+//   if(av===true){
+//    console.log("its available") ;
+
+//   }else{
+
+//     console.log("its not available") ;
+//   }
 
 
+// };
 
 
 
 
 
-if(chosen===2){
-
-  console.log(`${t2} ${a2} ${two2}`);
-  if(av2==true){
-   console.log("its available") ;
-
-  }else{
-
-    console.log("its not available") ;
-  }
 
 
-};
+// if(chosen===2){
 
-if(chosen==3){
+//   console.log(`${t2} ${a2} ${two2}`);
+//   if(av2==true){
+//    console.log("its available") ;
 
-  console.log(`${t3} ${a3} ${two23}`);
-  if(av3===true){
-   console.log("its available") ;
+//   }else{
 
-  }else{
-
-    console.log("its not available") ;
-  }
+//     console.log("its not available") ;
+//   }
 
 
-};
+// };
+
+// if(chosen==3){
+
+//   console.log(`${t3} ${a3} ${two23}`);
+//   if(av3===true){
+//    console.log("its available") ;
+
+//   }else{
+
+//     console.log("its not available") ;
+//   }
 
 
+// };
+
+
+
+//   let input = document.querySelector(".input");      
+// let add = document.querySelector(".add");
+// let divs = document.querySelector(".tasks");  
+
+// let emptyArray = [];
+
+// // check if input empty or not 
+// add.onclick = function () {
+//   if (input.value !== "") {
+//     addarraytotask(input.value);
+//     input.value = "";
+//   }
+// };
+
+// function addarraytotask(texttask) { 
+//   const task = {
+//     id: Date.now(),
+//     title: texttask,
+//     completed: false
+//   };
+
+//   emptyArray.push(task);
+//   createlementinttodiv(emptyArray);
+// }
+
+// function createlementinttodiv(tasksArray) {  
+//   divs.innerHTML = "";
+
+//   tasksArray.forEach((task) => {
+//     let div = document.createElement("div");
+//     div.className = "task";
+
+//     if (task.completed) {
+//       div.className="done";
+//     }
+
+//     div.setAttribute("data-id", task.id);
+//     div.appendChild(document.createTextNode(task.title));
+
+//     let span = document.createElement("span"); 
+//     span.className = "del";
+//     span.appendChild(document.createTextNode("delete"));
+
+//     div.appendChild(span);
+//     divs.appendChild(div); 
+//   });
+// }
+
+
+
+ //use sat() to sored uniqe Value;
+
+// let mydata=[1,2,3,2,3,4,5,1];
+
+// let myuniqevalue= new Set(mydata);
+// let myuniqevalue= new Set().add(1).add(2).add(3); 
+
+// let myuniqevalue= new Set(); 
+// myuniqevalue.add(1).add(2).add(3);
+
+// myuniqevalue.delete(2);
+//  myuniqevalue.add("A");
+
+// console.log(myuniqevalue.has("A"));
+
+// myuniqevalue.clear();
+// console.log(myuniqevalue);
+// console.log(myuniqevalue.size);
+ 
+
+
+// let mydata = [1,2,3,2,3,4,5,1];
+
+// let unique = mydata.reduce((acc, cur) => {
+//   if (!acc.includes(cur)) {
+//     acc.push(cur);
+//   }
+//   return acc;
+// },[])
+
+// console.log(unique);
+
+
+// let mydata = [1,2,3,2,3,4,5,1];
+
+// let unique = mydata.filter((item, index) => {
+//   return mydata.indexOf(item) === index;
+// },0);
+
+// console.log(unique);
+
+
+
+// creat new set and use iterator 
+
+let myset =new Set([1,1,2,4,3,5,5]);
+console.log( myset); 
+
+console.log(`myset ${myset.size}`);
+
+// use keys and valuse as alias
+let iterator =myset.keys();  
+
+ 
+console.log(iterator.next().value);
+
+console.log(iterator.next().value);
+
+console.log(iterator.next().value);
+
+console.log(iterator.next().value); 
+
+console.log(iterator.next().value);
+
+console.log(iterator.next().value); 
+
+
+myset.forEach((el)=>{
+
+return el ;
+
+
+
+})
+console.log(myset);
+//not have size and keyand valuse and array.forEach
+  
+let mywset =new WeakSet([{ A:1, b:2}]);
+console.log( mywset); 
