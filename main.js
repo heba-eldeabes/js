@@ -1865,37 +1865,155 @@
 
 // creat new set and use iterator 
 
-let myset =new Set([1,1,2,4,3,5,5]);
-console.log( myset); 
+// let myset =new Set([1,1,2,4,3,5,5]);
+// console.log( myset); 
 
-console.log(`myset ${myset.size}`);
+// console.log(`myset ${myset.size}`);
 
-// use keys and valuse as alias
-let iterator =myset.keys();  
+// // use keys and valuse as alias
+// let iterator =myset.keys();  
 
  
-console.log(iterator.next().value);
+// console.log(iterator.next().value);
 
-console.log(iterator.next().value);
+// console.log(iterator.next().value);
 
-console.log(iterator.next().value);
+// console.log(iterator.next().value);
 
-console.log(iterator.next().value); 
+// console.log(iterator.next().value); 
 
-console.log(iterator.next().value);
+// console.log(iterator.next().value);
 
-console.log(iterator.next().value); 
-
-
-myset.forEach((el)=>{
-
-return el ;
+// console.log(iterator.next().value); 
 
 
+// myset.forEach((el)=>{
 
-})
-console.log(myset);
-//not have size and keyand valuse and array.forEach
+// return el ;
+
+
+
+// })
+// console.log(myset);
+// //not have size and keyand valuse and array.forEach
   
-let mywset =new WeakSet([{ A:1, b:2}]);
-console.log( mywset); 
+// let mywset =new WeakSet([{ A:1, b:2}]);
+// console.log( mywset); 
+
+
+// // object & map  
+
+
+// let myobject ={};
+// let mycraetobject =Object.create(null); 
+// let myMap =new Map();  
+
+
+// console.log( myobject); 
+// console.log( mycraetobject); 
+// console.log(myMap);  
+
+
+
+// let mynewobject= {
+//  10:"number",
+//   "10":"string",
+
+
+// };
+
+// console.log( mynewobject[10]); 
+ 
+
+// mynewmap=new Map();
+// mynewmap.set(10,"number")
+// mynewmap.set("10","string")
+
+
+//    console.log(mynewmap.get(10));
+//     console.log(mynewmap.get("10"));
+
+
+
+// anther way to set value into map  
+
+
+
+// let all=new Map([
+// [10,"number"],
+// [true,"boolean"],
+// ["hallo","string"]
+
+
+
+// ]);
+
+// console.log(all.get(true));
+// console.log(all.get(10));
+// console.log(all.get("hallo")); 
+// console.log(all.delete("hallo")); 
+// console.log(all.has("hallo")); 
+
+// console.log(all.clear()); 
+
+let ob={
+
+  10:"number"
+,
+"hallo":"string"
+
+
+}
+
+let all=new Map(); 
+all.set(ob,"object value")     //overrideing
+op=null;
+
+console.log(all);
+
+
+
+
+let ob1={
+
+  10:"number"
+,
+"hallo":"string"
+
+
+}
+
+let all1=new WeakMap(); 
+all1.set(ob1,"object value")     //overrideing
+op1=null;
+
+console.log(all1);
+
+
+
+//use Array.from()
+
+
+console.log(Array.from("heba"));
+console.log(Array.from("12345"));
+
+
+
+let arr=[1,1,1,2,3,4,4,5,5];
+
+
+ let word =new Set (arr)
+
+console.log(Array.from(word));
+
+
+
+
+function af(){
+
+return Array.from(arguments)
+
+
+
+} 
+console.log(af("heba" ,"nor"));
