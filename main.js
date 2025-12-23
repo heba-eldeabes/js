@@ -2017,3 +2017,386 @@ return Array.from(arguments)
 
 } 
 console.log(af("heba" ,"nor"));
+
+
+
+
+
+// let num =[10,20,30,40,"a","b"] ;
+
+
+// num.copyWithin(3);
+
+// console.log(num);  
+// num.copyWithin(2,-2,-1);
+
+// console.log(num);  
+
+
+// this arg = owner of function
+
+
+let mynumber=50;
+
+let num =[10,20,30,40,"a","b"] ; 
+
+let fun=num.some(function(e){
+
+ return  e>this; 
+
+},mynumber)
+console.log(fun);
+
+
+
+// let fun=num.some((e)=>
+
+//    e>30 )
+// ;
+// console.log(fun);
+
+
+
+let checkvalue=function(arr,value){
+
+
+  return arr.some(function(e){
+
+  return  e===value;
+
+
+  })
+}
+
+console.log(checkvalue(num,20));
+
+
+
+let range={
+min:20,
+max:40
+
+};
+
+let check=num.some(function(e){
+
+return e>this.min&&e<this.max ;
+},range);  
+
+
+console.log(check);
+
+
+
+
+const lock={
+20:"place 1",
+30:"place 2",
+40:"place 3",
+50:"place 4",
+
+};
+
+
+let mainlock=10;
+
+
+
+// 1:retun it to array  
+
+let myarraylock=Object.keys(lock);
+console.log(myarraylock); 
+
+
+
+//chang tring to number   
+
+let mynumberarray=myarraylock.map(function(e){
+
+    return +e
+
+}) ;
+console.log(mynumberarray); 
+
+
+let arrq=mynumberarray.every(function(e){
+
+return e>this;
+
+},mainlock);
+
+
+console.log(arrq);
+
+
+
+
+
+
+
+let n1=[10,30,10,20];
+let n2=[30,20,10];
+
+
+let mynumb=[...n1,...n2];
+
+// let mynumb= new Set(n1)
+
+console.log(mynumb.length *Math.max(...n1));
+console.log(n2.concat(n1).length *Math.max(...n1));
+
+// n1.push(...n2); //puch return the new length in console;
+console.log(n1.push(...n2)*Math.max(...n1));
+
+  // Regular expression  
+  // i = insensitive
+  // g= global
+
+let mysyntacs="hallo my js  My best language  "; 
+
+let search=/my/ig;
+
+console.log(mysyntacs.match(search));
+
+
+
+
+let tid ="com Net info Code Io" 
+
+let tidre=/(com|info|code)/ig; 
+console.log(tid.match(tidre));
+
+
+let NUM="123456789"; 
+let NUMre=/[2-7]/ig; 
+console.log(NUM.match(NUMre));
+
+
+
+let notNUM="12$3%4@56789"; 
+let notNUMre=/[^1-9]/ig; 
+console.log(notNUM.match(notNUMre));
+ 
+
+
+
+
+let str="AaBbcdefG123!234%^&*"; 
+let stre=/[a-z]/g; 
+let allstre=/[a-z]/gi; 
+let notstre=/[^a-z]/g; 
+ let capitalatoz=/[A-Z]/g;
+ let nocapitalatoz=/[^A-Z]/g;
+ let abe =/[abe]/g;
+let nabe =/[^abe]/g;
+ 
+let allcrstre=/[^a-zA-Z]/g; 
+let special=/[^a-zA-Z1-4]/g; 
+console.log(str.match(stre));
+
+console.log(str.match(notstre));
+
+console.log(str.match(capitalatoz));
+console.log(str.match(nocapitalatoz));
+console.log(str.match(abe));
+console.log(str.match(nabe));
+
+console.log(str.match(allstre));
+console.log(str.match(allcrstre));
+console.log(str.match(special));
+
+
+
+
+
+let url1='elzero.org'
+
+let url2='http://elzero.org';
+let url3='http://elZero.org'; 
+let url4='http://www.elZero.org'; 
+let url5='http://www.elZero.org:articles.php?id=100&cat=topics '; 
+
+let re=/(https?:\/\/)?(www.)?\w+.(org)(:\w+.\w+(\?)\w+=\d{3}&\w+=\w+)?/ig;
+
+
+console.log(url1.match(re));
+console.log(url2.match(re));
+console.log(url3.match(re));
+console.log(url4.match(re));
+console.log(url5.match(re));
+
+
+//opp constractor funcation
+
+
+// function User(id,name,salary){
+//  this.i=id;
+//  this.n=name;
+// this.s=salary+1000;
+
+
+// }; 
+
+
+// let userone =new User(100,"heba",1000); 
+// console.log(userone.s);
+
+
+
+// new syntax to contractor function ;
+
+
+
+// class User{
+  
+  
+//  constructor(id,name,salary){
+
+//  this.i=id;
+//  this.n=name||"unknow";
+// this.s=salary>500?salary+100:salary+50; 
+// this.msg=function(){
+
+// return `hallo your name is${this.n} your salary is ${this.s}`
+
+// }
+
+
+// }
+// sayhallo(){
+//   return `hallo your name is${this.n} your salary is ${this.s}`
+// }
+
+// updatename(newname){
+ 
+// this.n=newname;
+
+
+// }
+//  };
+// let userone =new User(100,"heba",1000); 
+// console.log(userone.msg());
+// console.log(userone.s);
+// console.log(userone.n);
+// console.log(userone.updatename("nor"));
+// console.log(userone.n);
+// console.log(userone.sayhallo());
+// console.log(userone instanceof User);
+
+
+
+
+
+//  let usertwo =new Number(123) ;
+//  let userthree=123;
+
+
+
+//  console.log(userthree instanceof Number);
+
+//  console.log(usertwo instanceof Number);
+
+//  console.log(userthree.constructor===Number);
+
+//  console.log(usertwo.constructor ===Number);
+
+
+
+
+
+//  class danger{
+
+//   #es;
+//   constructor(number,id,Email,esalary){
+  
+//  this.n=number;
+//  this.i=id;
+//  this.e=Email;
+//  this.#es=esalary;
+
+//   }
+// getmethod() {
+
+//   return parseInt(this.#es);
+
+// }
+
+
+
+
+// }
+
+ 
+ 
+// class Admin extends danger {
+    
+// constructor(number,id,Email,name){
+
+//   super(number,id,Email,esalary)
+//   this.n=name;
+
+
+// }
+    
+
+
+// } 
+
+ 
+ 
+// let persontwo = new Admin(0o14564,55,"Ahmed@.com","nor");
+
+
+
+//  let personOne = new Admin(0o1234,20,"heba@.com");
+
+
+
+//  console.log(persontwo);
+
+//  console.log(personOne.e); 
+
+
+
+
+let dateone=new Date();
+ let date=Date.now(); 
+ console.log(date);
+
+ console.log(dateone); 
+ let seconds= Date.now()/1000; 
+  console.log(seconds); 
+  let minutes=seconds/60;
+  console.log(minutes);
+
+
+
+  let start=Date.now();
+
+
+for(let i=0 ; i<10000;i++){
+
+ let div =document.createElement ("div") ;
+ let child= document.createTextNode((i));
+    div.appendChild(child);
+    document.body.appendChild(div);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+   let end=Date.now(); 
+
+
+   let duration=start-end;
+   console.log(duration);
