@@ -2400,3 +2400,64 @@ for(let i=0 ; i<10000;i++){
 
    let duration=start-end;
    console.log(duration);
+
+
+
+
+   function* generatenumber(){
+    yield 1;
+    // alert("hallo");
+    yield 2;
+    yield 3;
+    yield 4;
+
+
+   
+  }; 
+
+  function* generatelatter(){
+    yield "a";
+    // alert("hallo");
+    yield "b";
+    yield "c";
+   
+
+
+   }; 
+
+ function* generateAll(){
+    yield* generatenumber();
+    
+    yield* generatelatter();
+   
+
+
+   }; 
+
+
+
+
+
+
+
+
+
+
+
+
+   let generate=generateAll();
+   console.log(generate); 
+   console.log(generate.next()); 
+   console.log(generate.next()); 
+   console.log(generate.return()); 
+  //  console.log(generate.next()); 
+  //  console.log(generate.next()); 
+
+
+
+   for(let value of generate){
+
+
+   console.log(value);
+
+   };
