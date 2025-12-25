@@ -1,0 +1,21 @@
+ 
+ {
+ "string":"hallo",
+ "num":100,
+ "object":{
+ "EG":"Giza" ,
+ "USA":"london"
+
+
+ } ,
+ "array":["cairo","USA"]
+ 
+
+
+ } 
+
+
+
+
+
+s

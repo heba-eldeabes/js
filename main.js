@@ -1956,7 +1956,7 @@
 
 // console.log(all.clear()); 
 
-let ob={
+let op={
 
   10:"number"
 ,
@@ -1966,7 +1966,7 @@ let ob={
 }
 
 let all=new Map(); 
-all.set(ob,"object value")     //overrideing
+all.set(op,"object value")     //overrideing
 op=null;
 
 console.log(all);
@@ -1974,7 +1974,7 @@ console.log(all);
 
 
 
-let ob1={
+let op1={
 
   10:"number"
 ,
@@ -1984,7 +1984,7 @@ let ob1={
 }
 
 let all1=new WeakMap(); 
-all1.set(ob1,"object value")     //overrideing
+all1.set(op1,"object value")     //overrideing
 op1=null;
 
 console.log(all1);
@@ -2425,39 +2425,184 @@ for(let i=0 ; i<10000;i++){
 
    }; 
 
- function* generateAll(){
-    yield* generatenumber();
+//  function* generateAll(){
+//     yield* generatenumber();
     
-    yield* generatelatter();
+//     yield* generatelatter();
    
 
-
-   }; 
-
-
+//      let index=0  ; 
+//    while(true ){
 
 
+//    yield index++;
 
-
-
+//    };
 
 
 
+  //  }; 
 
 
-   let generate=generateAll();
-   console.log(generate); 
-   console.log(generate.next()); 
-   console.log(generate.next()); 
-   console.log(generate.return()); 
+
+
+
+
+
+
+
+
+
+
+  //  let generate=generateAll();
+  //  console.log(generate); 
+  //  console.log(generate.next()); 
+  //  console.log(generate.next()); 
+  // //  console.log(generate.return()); 
   //  console.log(generate.next()); 
   //  console.log(generate.next()); 
 
 
 
-   for(let value of generate){
+  //  for(let value of generate){
 
 
-   console.log(value);
+  //  console.log(value);
 
-   };
+  //  };
+
+
+
+
+// const jsjsonfromSever='{"username":"ahmed","age":26}' 
+
+//    console.log(typeof jsjsonfromSever);
+//    console.log(jsjsonfromSever);   
+
+  //  chang from json to object 
+
+
+  // let myobject=JSON.parse( jsjsonfromSever)  
+  // console.log(typeof myobject);
+  //  console.log(myobject); 
+
+  //  myobject["username"]="heba";
+  //   myobject["age"]=23;
+
+  //  console.log(typeof myobject);
+  //  console.log(myobject); 
+
+
+  //  const jsjsontoSever=JSON.stringify(myobject);
+
+  //   console.log(typeof jsjsontoSever);
+  //  console.log(jsjsontoSever);
+
+
+
+
+
+   const fromserser ='{"first name":"heba","id":234}';
+
+  //  console.log(typeof fromserser);
+  //   console.log(fromserser); 
+
+
+    const change=JSON.parse(fromserser); 
+ 
+    change["first name"]="Ahmed"; 
+     change["id"]=456; 
+ console.log(change);
+
+
+ const toserver=JSON.stringify(change);
+
+      console.log(toserver);
+
+
+
+
+
+
+      // synchronous run in sequence;
+
+        // console.log(1);
+        // console.log(2);
+        // console.log(alert("halo"));
+        // console.log(3);
+
+
+
+
+
+
+       //Asynchronous run in parallel
+
+
+        console.log(1);
+        console.log(2);
+        setTimeout(()=>{
+          console.log("hallo")
+        },4000);
+        console.log(3);
+  
+
+
+
+        //call stack 
+
+
+       // mange excuted for funcation 
+
+
+
+setTimeout(()=>{
+
+console.log("hallo")      //last one in console 
+},0)
+
+
+       function one(){
+
+   console.log("one");
+  
+       };
+
+        function two(){ 
+          one();
+
+   console.log("two");
+  
+       };
+
+
+         function three(){ 
+          two()
+
+   console.log("three");
+  
+       };
+
+       three(); 
+
+
+
+
+
+
+    const MYREQUST= new XMLHttpRequest();
+    MYREQUST.open("GET","text.json");
+    MYREQUST.send() 
+   
+     MYREQUST.onreadystatechange=function(){
+     
+
+      if(this.readyState===4 && this.status===200)
+  
+      console.log(this.responseText);
+
+     }
+
+
+
+   
