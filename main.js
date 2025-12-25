@@ -1956,67 +1956,67 @@
 
 // console.log(all.clear()); 
 
-let op={
+// let op={
 
-  10:"number"
-,
-"hallo":"string"
-
-
-}
-
-let all=new Map(); 
-all.set(op,"object value")     //overrideing
-op=null;
-
-console.log(all);
+//   10:"number"
+// ,
+// "hallo":"string"
 
 
+// }
+
+// let all=new Map(); 
+// all.set(op,"object value")     //overrideing
+// op=null;
+
+// console.log(all);
 
 
-let op1={
-
-  10:"number"
-,
-"hallo":"string"
 
 
-}
+// let op1={
 
-let all1=new WeakMap(); 
-all1.set(op1,"object value")     //overrideing
-op1=null;
+//   10:"number"
+// ,
+// "hallo":"string"
 
-console.log(all1);
+
+// }
+
+// let all1=new WeakMap(); 
+// all1.set(op1,"object value")     //overrideing
+// op1=null;
+
+// console.log(all1);
 
 
 
 //use Array.from()
 
 
-console.log(Array.from("heba"));
-console.log(Array.from("12345"));
+// console.log(Array.from("heba"));
+// console.log(Array.from("12345"));
 
 
 
-let arr=[1,1,1,2,3,4,4,5,5];
+// let arr=[1,1,1,2,3,4,4,5,5];
 
 
- let word =new Set (arr)
+//  let word =new Set (arr)
 
-console.log(Array.from(word));
-
-
-
-
-function af(){
-
-return Array.from(arguments)
+// console.log(Array.from(word));
 
 
 
-} 
-console.log(af("heba" ,"nor"));
+
+// function af(){
+
+// return Array.from(arguments)
+
+
+
+// } 
+// console.log(af("heba" ,"nor"));
 
 
 
@@ -2036,194 +2036,194 @@ console.log(af("heba" ,"nor"));
 // this arg = owner of function
 
 
-let mynumber=50;
+// let mynumber=50;
 
-let num =[10,20,30,40,"a","b"] ; 
+// let num =[10,20,30,40,"a","b"] ; 
 
-let fun=num.some(function(e){
+// let fun=num.some(function(e){
 
- return  e>this; 
+//  return  e>this; 
 
-},mynumber)
-console.log(fun);
-
-
-
-// let fun=num.some((e)=>
-
-//    e>30 )
-// ;
+// },mynumber)
 // console.log(fun);
 
 
 
-let checkvalue=function(arr,value){
+// // let fun=num.some((e)=>
 
-
-  return arr.some(function(e){
-
-  return  e===value;
-
-
-  })
-}
-
-console.log(checkvalue(num,20));
+// //    e>30 )
+// // ;
+// // console.log(fun);
 
 
 
-let range={
-min:20,
-max:40
-
-};
-
-let check=num.some(function(e){
-
-return e>this.min&&e<this.max ;
-},range);  
+// let checkvalue=function(arr,value){
 
 
-console.log(check);
+//   return arr.some(function(e){
 
+//   return  e===value;
+
+
+//   })
+// }
+
+// console.log(checkvalue(num,20));
 
 
 
-const lock={
-20:"place 1",
-30:"place 2",
-40:"place 3",
-50:"place 4",
+// let range={
+// min:20,
+// max:40
 
-};
+// };
 
+// let check=num.some(function(e){
 
-let mainlock=10;
-
-
-
-// 1:retun it to array  
-
-let myarraylock=Object.keys(lock);
-console.log(myarraylock); 
+// return e>this.min&&e<this.max ;
+// },range);  
 
 
-
-//chang tring to number   
-
-let mynumberarray=myarraylock.map(function(e){
-
-    return +e
-
-}) ;
-console.log(mynumberarray); 
-
-
-let arrq=mynumberarray.every(function(e){
-
-return e>this;
-
-},mainlock);
-
-
-console.log(arrq);
+// console.log(check);
 
 
 
 
+// const lock={
+// 20:"place 1",
+// 30:"place 2",
+// 40:"place 3",
+// 50:"place 4",
+
+// };
+
+
+// let mainlock=10;
 
 
 
-let n1=[10,30,10,20];
-let n2=[30,20,10];
+// // 1:retun it to array  
 
-
-let mynumb=[...n1,...n2];
-
-// let mynumb= new Set(n1)
-
-console.log(mynumb.length *Math.max(...n1));
-console.log(n2.concat(n1).length *Math.max(...n1));
-
-// n1.push(...n2); //puch return the new length in console;
-console.log(n1.push(...n2)*Math.max(...n1));
-
-  // Regular expression  
-  // i = insensitive
-  // g= global
-
-let mysyntacs="hallo my js  My best language  "; 
-
-let search=/my/ig;
-
-console.log(mysyntacs.match(search));
+// let myarraylock=Object.keys(lock);
+// console.log(myarraylock); 
 
 
 
+// //chang tring to number   
 
-let tid ="com Net info Code Io" 
+// let mynumberarray=myarraylock.map(function(e){
 
-let tidre=/(com|info|code)/ig; 
-console.log(tid.match(tidre));
+//     return +e
 
-
-let NUM="123456789"; 
-let NUMre=/[2-7]/ig; 
-console.log(NUM.match(NUMre));
+// }) ;
+// console.log(mynumberarray); 
 
 
+// let arrq=mynumberarray.every(function(e){
 
-let notNUM="12$3%4@56789"; 
-let notNUMre=/[^1-9]/ig; 
-console.log(notNUM.match(notNUMre));
+// return e>this;
+
+// },mainlock);
+
+
+// console.log(arrq);
+
+
+
+
+
+
+
+// let n1=[10,30,10,20];
+// let n2=[30,20,10];
+
+
+// let mynumb=[...n1,...n2];
+
+// // let mynumb= new Set(n1)
+
+// console.log(mynumb.length *Math.max(...n1));
+// console.log(n2.concat(n1).length *Math.max(...n1));
+
+// // n1.push(...n2); //puch return the new length in console;
+// console.log(n1.push(...n2)*Math.max(...n1));
+
+//   // Regular expression  
+//   // i = insensitive
+//   // g= global
+
+// let mysyntacs="hallo my js  My best language  "; 
+
+// let search=/my/ig;
+
+// console.log(mysyntacs.match(search));
+
+
+
+
+// let tid ="com Net info Code Io" 
+
+// let tidre=/(com|info|code)/ig; 
+// console.log(tid.match(tidre));
+
+
+// let NUM="123456789"; 
+// let NUMre=/[2-7]/ig; 
+// console.log(NUM.match(NUMre));
+
+
+
+// let notNUM="12$3%4@56789"; 
+// let notNUMre=/[^1-9]/ig; 
+// console.log(notNUM.match(notNUMre));
  
 
 
 
 
-let str="AaBbcdefG123!234%^&*"; 
-let stre=/[a-z]/g; 
-let allstre=/[a-z]/gi; 
-let notstre=/[^a-z]/g; 
- let capitalatoz=/[A-Z]/g;
- let nocapitalatoz=/[^A-Z]/g;
- let abe =/[abe]/g;
-let nabe =/[^abe]/g;
+// let str="AaBbcdefG123!234%^&*"; 
+// let stre=/[a-z]/g; 
+// let allstre=/[a-z]/gi; 
+// let notstre=/[^a-z]/g; 
+//  let capitalatoz=/[A-Z]/g;
+//  let nocapitalatoz=/[^A-Z]/g;
+//  let abe =/[abe]/g;
+// let nabe =/[^abe]/g;
  
-let allcrstre=/[^a-zA-Z]/g; 
-let special=/[^a-zA-Z1-4]/g; 
-console.log(str.match(stre));
+// let allcrstre=/[^a-zA-Z]/g; 
+// let special=/[^a-zA-Z1-4]/g; 
+// console.log(str.match(stre));
 
-console.log(str.match(notstre));
+// console.log(str.match(notstre));
 
-console.log(str.match(capitalatoz));
-console.log(str.match(nocapitalatoz));
-console.log(str.match(abe));
-console.log(str.match(nabe));
+// console.log(str.match(capitalatoz));
+// console.log(str.match(nocapitalatoz));
+// console.log(str.match(abe));
+// console.log(str.match(nabe));
 
-console.log(str.match(allstre));
-console.log(str.match(allcrstre));
-console.log(str.match(special));
-
-
+// console.log(str.match(allstre));
+// console.log(str.match(allcrstre));
+// console.log(str.match(special));
 
 
 
-let url1='elzero.org'
-
-let url2='http://elzero.org';
-let url3='http://elZero.org'; 
-let url4='http://www.elZero.org'; 
-let url5='http://www.elZero.org:articles.php?id=100&cat=topics '; 
-
-let re=/(https?:\/\/)?(www.)?\w+.(org)(:\w+.\w+(\?)\w+=\d{3}&\w+=\w+)?/ig;
 
 
-console.log(url1.match(re));
-console.log(url2.match(re));
-console.log(url3.match(re));
-console.log(url4.match(re));
-console.log(url5.match(re));
+// let url1='elzero.org'
+
+// let url2='http://elzero.org';
+// let url3='http://elZero.org'; 
+// let url4='http://www.elZero.org'; 
+// let url5='http://www.elZero.org:articles.php?id=100&cat=topics '; 
+
+// let re=/(https?:\/\/)?(www.)?\w+.(org)(:\w+.\w+(\?)\w+=\d{3}&\w+=\w+)?/ig;
+
+
+// console.log(url1.match(re));
+// console.log(url2.match(re));
+// console.log(url3.match(re));
+// console.log(url4.match(re));
+// console.log(url5.match(re));
 
 
 //opp constractor funcation
@@ -2359,33 +2359,31 @@ console.log(url5.match(re));
 
 
 
-let dateone=new Date();
- let date=Date.now(); 
- console.log(date);
+// let dateone=new Date();
+//  let date=Date.now(); 
+//  console.log(date);
 
- console.log(dateone); 
- let seconds= Date.now()/1000; 
-  console.log(seconds); 
-  let minutes=seconds/60;
-  console.log(minutes);
-
-
-
-  let start=Date.now();
-
-
-for(let i=0 ; i<10000;i++){
-
- let div =document.createElement ("div") ;
- let child= document.createTextNode((i));
-    div.appendChild(child);
-    document.body.appendChild(div);
+//  console.log(dateone); 
+//  let seconds= Date.now()/1000; 
+//   console.log(seconds); 
+//   let minutes=seconds/60;
+//   console.log(minutes);
 
 
 
-}
+//   let start=Date.now();
 
 
+// for(let i=0 ; i<10000;i++){
+
+//  let div =document.createElement ("div") ;
+//  let child= document.createTextNode((i));
+//     div.appendChild(child);
+//     document.body.appendChild(div);
+
+
+
+// }
 
 
 
@@ -2395,35 +2393,37 @@ for(let i=0 ; i<10000;i++){
 
 
 
-   let end=Date.now(); 
 
 
-   let duration=start-end;
-   console.log(duration);
+  //  let end=Date.now(); 
+
+
+  //  let duration=start-end;
+  //  console.log(duration);
 
 
 
 
-   function* generatenumber(){
-    yield 1;
-    // alert("hallo");
-    yield 2;
-    yield 3;
-    yield 4;
+  //  function* generatenumber(){
+  //   yield 1;
+  //   // alert("hallo");
+  //   yield 2;
+  //   yield 3;
+  //   yield 4;
 
 
    
-  }; 
+  // }; 
 
-  function* generatelatter(){
-    yield "a";
-    // alert("hallo");
-    yield "b";
-    yield "c";
+  // function* generatelatter(){
+  //   yield "a";
+  //   // alert("hallo");
+  //   yield "b";
+  //   yield "c";
    
 
 
-   }; 
+  //  }; 
 
 //  function* generateAll(){
 //     yield* generatenumber();
@@ -2502,22 +2502,22 @@ for(let i=0 ; i<10000;i++){
 
 
 
-   const fromserser ='{"first name":"heba","id":234}';
+  //  const fromserser ='{"first name":"heba","id":234}';
 
   //  console.log(typeof fromserser);
   //   console.log(fromserser); 
 
 
-    const change=JSON.parse(fromserser); 
+//     const change=JSON.parse(fromserser); 
  
-    change["first name"]="Ahmed"; 
-     change["id"]=456; 
- console.log(change);
+//     change["first name"]="Ahmed"; 
+//      change["id"]=456; 
+//  console.log(change);
 
 
- const toserver=JSON.stringify(change);
+//  const toserver=JSON.stringify(change);
 
-      console.log(toserver);
+//       console.log(toserver);
 
 
 
@@ -2539,12 +2539,12 @@ for(let i=0 ; i<10000;i++){
        //Asynchronous run in parallel
 
 
-        console.log(1);
-        console.log(2);
-        setTimeout(()=>{
-          console.log("hallo")
-        },4000);
-        console.log(3);
+        // console.log(1);
+        // console.log(2);
+        // setTimeout(()=>{
+        //   console.log("hallo")
+        // },4000);
+        // console.log(3);
   
 
 
@@ -2556,53 +2556,309 @@ for(let i=0 ; i<10000;i++){
 
 
 
-setTimeout(()=>{
+// setTimeout(()=>{
 
-console.log("hallo")      //last one in console 
-},0)
+// console.log("hallo")      //last one in console 
+// },0)
 
 
-       function one(){
+//        function one(){
 
-   console.log("one");
+//    console.log("one");
   
-       };
+//        };
 
-        function two(){ 
-          one();
+//         function two(){ 
+//           one();
 
-   console.log("two");
+//    console.log("two");
   
-       };
+//        };
 
 
-         function three(){ 
-          two()
+//          function three(){ 
+//           two()
 
-   console.log("three");
+//    console.log("three");
   
-       };
+//        };
 
-       three(); 
-
-
+//        three(); 
 
 
 
 
-    const MYREQUST= new XMLHttpRequest();
-    MYREQUST.open("GET","text.json");
-    MYREQUST.send() 
+
+
+    // const MYREQUST= new XMLHttpRequest();
+    // MYREQUST.open("GET","text.json");
+    // MYREQUST.send() 
    
-     MYREQUST.onreadystatechange=function(){
+    //  MYREQUST.onreadystatechange=function(){
      
 
-      if(this.readyState===4 && this.status===200)
+    //   if(this.readyState===4 && this.status===200)
   
-      console.log(this.responseText);
+    //   console.log(this.responseText);
 
-     }
+    //  }
 
 
 
-   
+    //  function hell pyramid of dom alot of call back funcation
+ 
+
+
+    // setTimeout(() => {
+    //   console.log("logo");
+    //   setTimeout(() => {
+    //   console.log("photo");
+    //     setTimeout(() => {
+    //   console.log("anther photo");
+    // }, 4000);
+    // }, 2000);
+    // }, 1000); 
+
+
+
+
+  // Promise  syntax of promise to avoid call back hell;
+
+
+
+//   let  mypromise=new Promise((resovefuncation ,rejectfuncation)=>{
+
+//      let contact=true;
+//    if(contact){
+//    resovefuncation("concat")
+
+//    }else{
+
+// rejectfuncation("filled")
+
+//    }
+
+
+
+//   }).then((resolvevalue)=>
+
+//     {console.log(`good${resolvevalue}`)},
+
+//     (rejectvalue)=> {console.log(`bad${rejectvalue}`)},
+
+//   ) 
+
+
+// const mypromise=new Promise((resolve , reject) => { 
+//   let employess=[] 
+//  if(employess.length==4){
+//  resolve(employess);
+
+
+
+//  }else reject(Error ("notfour"));
+
+
+ 
+
+
+  
+// // }).then((resolvevalue)=>{
+// //  resolvevalue.length=2;
+// //  return resolvevalue;
+
+// // }).then((resolvevalue)=>{
+// //  resolvevalue.length=1;
+// //  return resolvevalue;
+// // }).then((resolvevalue)=>{
+ 
+// //  console.log(resolvevalue) ;
+// }).catch((rejectreasone)=>{
+
+// console.log(rejectreasone)
+
+// }).finally(console.log("is done"));
+
+
+
+
+// const url = "https://corsproxy.io/?https://www.api.org/";
+
+// let getapi=(apilink)=>{
+// return new Promise((resolve, reject) => {
+  
+// const req = new XMLHttpRequest();
+// req.open("GET", apilink);
+// req.send();
+
+// console.log(req); 
+
+// req.onload=function(){
+
+// if(req.readyState==4&&req.status==200){
+ 
+//  resolve (JSON.parse(this.responseText));
+  
+  
+
+//    }else reject(Error("notfound"))
+//   }
+
+
+
+
+// })
+
+// }
+// getapi("https://corsproxy.io/?https://www.api.org/").then((resolvevalue)=>{
+
+//   resolvevalue.lenght=10;
+//   return resolvevalue;
+
+
+
+// }).catch((rejectvalue)=>{
+
+// console.log(rejectvalue);
+
+// }).finally(console.log("done"));
+
+
+
+
+// //use fetch APi 
+
+
+// fetch("https://corsproxy.io/?https://www.api.org/").then((result)=>{
+  
+//  result.json();
+//   return result;
+
+
+// }).then((mydata)=>{
+// mydata.lenght=10;
+
+
+// }).catch((solve)=>{
+
+//   console.log(solve);
+
+
+// }).finally(console.log("done"));
+
+
+
+
+//ALL Promise 
+
+// const myFirstpromise=new Promise ((resolve ,reject)=>{
+
+// setTimeout(() => {
+//   resolve("my Firstpromise")
+// }, 5000);
+
+// }) 
+
+// const mysecondpromise=new Promise ((resolve ,reject)=>{
+
+// setTimeout(() => {
+//   resolve("my secondpromise")
+// }, 2000);
+
+// }) 
+
+// const mythirdpromise=new Promise ((resolve ,reject)=>{
+
+// setTimeout(() => {
+//   reject("my thirdpromise")
+// }, 1000);
+
+// }) 
+
+
+// Promise.all([myFirstpromise,mysecondpromise,mythirdpromise]).then(
+  
+//  (resolvevalue)=>(console.log(resolvevalue)),
+
+// (rejectvalue)=>(console.log(`reject${rejectvalue}`))
+
+
+
+// )
+
+
+
+
+
+// const myFirstpromise=new Promise ((resolve ,reject)=>{
+
+// setTimeout(() => {
+//   resolve("my Firstpromise")
+// }, 5000);
+
+// }) 
+
+// const mysecondpromise=new Promise ((resolve ,reject)=>{
+
+// setTimeout(() => {
+//   resolve("my secondpromise")
+// }, 2000);
+
+// }) 
+
+// const mythirdpromise=new Promise ((resolve ,reject)=>{
+
+// setTimeout(() => {
+//   reject("my thirdpromise")
+// }, 1000);
+
+// }) 
+
+
+// Promise.allSettled([myFirstpromise,mysecondpromise,mythirdpromise]).then(
+  
+//  (resolvevalue)=>(console.log(resolvevalue)),
+
+// (rejectvalue)=>(console.log(`reject${rejectvalue}`))
+
+
+
+// )
+
+
+
+
+const myFirstpromise=new Promise ((resolve ,reject)=>{
+
+setTimeout(() => {
+  resolve("my Firstpromise")
+}, 5000);
+
+}) 
+
+const mysecondpromise=new Promise ((resolve ,reject)=>{
+
+setTimeout(() => {
+  resolve("my secondpromise")
+}, 2000);
+
+}) 
+
+const mythirdpromise=new Promise ((resolve ,reject)=>{
+
+setTimeout(() => {
+  reject("mythirdpromise")
+}, 1000);
+
+}) 
+
+
+Promise.race([myFirstpromise,mysecondpromise,mythirdpromise]).then(
+  
+ (resolvevalue)=>(console.log(resolvevalue)),
+
+(rejectvalue)=>(console.log(`reject ${rejectvalue}`))
+
+
+
+)
