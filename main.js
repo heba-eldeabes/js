@@ -2862,3 +2862,79 @@ Promise.race([myFirstpromise,mysecondpromise,mythirdpromise]).then(
 
 
 )
+
+
+
+
+// const myemploye=new Promise((resolve, reject) => {
+//   let myemp=["Ahmed"] ;
+//   if(myemp.length>0){
+
+//   resolve("found")
+
+//   }else{
+
+// reject("NOTfound")
+
+//   }
+
+
+
+
+// }).then((res)=>(console.log(res)),
+//    (rej)=>(console.log(rej))
+//   )
+
+
+
+
+
+// const myemploye=(() => {
+//   let myemp=["Ahmed"] ;
+//   if(myemp.length>0){
+
+//   return Promise.resolve("found")
+
+//   }else{
+
+//  return Promise.reject("NOTfound")
+
+//   }
+
+
+
+
+// }) 
+
+//    myemploye().then((res)=>(console.log(res)),
+//    (rej)=>(console.log(rej))
+//   );
+
+
+
+
+
+
+
+
+
+ async function myemploye() {
+  let myemp=["Ahmed"] ;
+  if(myemp.length>0){
+
+  return "found"
+
+  }else{
+
+ return "NOTfound"
+
+  }
+
+
+
+
+};
+
+   myemploye().then((res)=>(console.log(res)),
+   (rej)=>(console.log(rej))
+  );
