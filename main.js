@@ -2828,40 +2828,40 @@
 
 
 
-const myFirstpromise=new Promise ((resolve ,reject)=>{
+// const myFirstpromise=new Promise ((resolve ,reject)=>{
 
-setTimeout(() => {
-  resolve("my Firstpromise")
-}, 5000);
+// setTimeout(() => {
+//   resolve("my Firstpromise")
+// }, 5000);
 
-}) 
+// }) 
 
-const mysecondpromise=new Promise ((resolve ,reject)=>{
+// const mysecondpromise=new Promise ((resolve ,reject)=>{
 
-setTimeout(() => {
-  resolve("my secondpromise")
-}, 2000);
+// setTimeout(() => {
+//   resolve("my secondpromise")
+// }, 2000);
 
-}) 
+// }) 
 
-const mythirdpromise=new Promise ((resolve ,reject)=>{
+// const mythirdpromise=new Promise ((resolve ,reject)=>{
 
-setTimeout(() => {
-  reject("mythirdpromise")
-}, 1000);
+// setTimeout(() => {
+//   reject("mythirdpromise")
+// }, 1000);
 
-}) 
+// }) 
 
 
-Promise.race([myFirstpromise,mysecondpromise,mythirdpromise]).then(
+// Promise.race([myFirstpromise,mysecondpromise,mythirdpromise]).then(
   
- (resolvevalue)=>(console.log(resolvevalue)),
+//  (resolvevalue)=>(console.log(resolvevalue)),
 
-(rejectvalue)=>(console.log(`reject ${rejectvalue}`))
+// (rejectvalue)=>(console.log(`reject ${rejectvalue}`))
 
 
 
-)
+// )
 
 
 
@@ -2918,23 +2918,52 @@ Promise.race([myFirstpromise,mysecondpromise,mythirdpromise]).then(
 
 
 
- async function myemploye() {
-  let myemp=["Ahmed"] ;
-  if(myemp.length>0){
+//  async function myemploye() {
+//   let myemp=["Ahmed"] ;
+//   if(myemp.length>0){
 
-  return "found"
+//   return "found"
 
-  }else{
+//   }else{
 
- return "NOTfound"
+//  return "NOTfound"
 
+//   }
+
+
+
+
+// };
+
+//    myemploye().then((res)=>(console.log(res)),
+//    (rej)=>(console.log(rej))
+//   );
+
+
+
+
+
+
+// use await with async function  run promise first then anther syntax
+  
+
+
+  const mypromise=new Promise ((resolve ,reject)=>{
+
+setTimeout(() => {
+  resolve("mypromise")
+}, 1000);
+
+}) 
+ 
+
+  async function get(){
+    console.log("before promise");
+    // mypromise.then((result) =>(console.log(result)));
+    console.log(await mypromise);
+
+    console.log("after promise");
   }
 
 
-
-
-};
-
-   myemploye().then((res)=>(console.log(res)),
-   (rej)=>(console.log(rej))
-  );
+  get();
